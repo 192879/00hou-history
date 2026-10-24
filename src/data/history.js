@@ -1,8 +1,8 @@
 export const REGIONS=[
- {id:'china',name:'中国',desc:'王朝更替、农业文明、城市与现代化交织的漫长历史。'},
- {id:'europe',name:'欧洲',desc:'城邦、帝国、工业革命与现代国家体系塑造的区域。'},
- {id:'west-asia',name:'西亚',desc:'古代文明、跨洲贸易与多重帝国交会之地。'},
- {id:'other',name:'其他地区',desc:'以概括性世界史背景呈现，避免套用单一区域经历。'}
+ {id:'china',name:'中国',desc:'王朝更替、农业文明、城市与现代化交织的漫长历史。',subregions:['华北','江南','西南','岭南','西北']},
+ {id:'europe',name:'欧洲',desc:'城邦、帝国、工业革命与现代国家体系塑造的区域。',subregions:['西欧','南欧','中欧','北欧','东欧']},
+ {id:'west-asia',name:'西亚',desc:'古代文明、跨洲贸易与多重帝国交会之地。',subregions:['两河流域','安纳托利亚','波斯地区','黎凡特','阿拉伯地区']},
+ {id:'other',name:'其他地区',desc:'以概括性世界史背景呈现，避免套用单一区域经历。',subregions:['东亚其他地区','南亚','非洲','美洲','大洋洲']}
 ];
 export const HISTORY_EVENTS=[
  ['changping','长平之战',-260,-260,'china','大规模战争改变了战国后期的力量格局。','crisis'],
