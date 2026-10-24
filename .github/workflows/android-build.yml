@@ -31,8 +31,11 @@ jobs:
           distribution: temurin
           java-version: '21'
           cache: gradle
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Install Android SDK 36 packages
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run game tests
