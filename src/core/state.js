@@ -6,7 +6,7 @@ export const ATTR_NAMES=['体魄','才智','人缘','韧性','家境'];
 export function createGameState({birthYear=2000,region='china',seed=Date.now(),name='无名旅人'}={}){
   const rng=new SeededRandom(seed);
   return {
-    schemaVersion:V2_SCHEMA_VERSION,gameVersion:'2.0.0-alpha.1',id:cryptoId(rng),name,
+    schemaVersion:V2_SCHEMA_VERSION,gameVersion:'2.0.0-alpha.2',id:cryptoId(rng),name,
     birthYear,currentYear:birthYear,age:0,region,alive:true,ended:false,
     rngState:rng.snapshot(),revision:0,lastSettlementYear:null,pendingEvent:null,
     attributes:{体魄:5,才智:5,人缘:5,韧性:5,家境:5},
