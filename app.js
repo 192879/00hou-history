@@ -193,6 +193,7 @@ async function importSave(file){
 $('importInput')?.addEventListener('change',e=>{const f=e.target.files?.[0];if(f)importSave(f);e.target.value=''});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('installBtn')?.classList.remove('hidden')});
 $('installBtn')?.addEventListener('click',async()=>{if(!deferredInstall)return;deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null;$('installBtn').classList.add('hidden')});
+window.addEventListener('00hou:pause',()=>save());
 document.addEventListener('touchmove',e=>{if(window.scrollY===0&&e.touches?.[0]?.clientY>80)e.stopPropagation()},{passive:true});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 
