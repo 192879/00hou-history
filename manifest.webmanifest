@@ -1,0 +1,17 @@
+{
+  "name": "00后渡劫模拟器",
+  "short_name": "00后渡劫",
+  "description": "跨越公元前1000年至公元2000年的中文人生抉择游戏",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050713",
+  "theme_color": "#070b18",
+  "lang": "zh-CN",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"},
+    {"src":"icon-maskable.svg","sizes":"any","type":"image/svg+xml","purpose":"maskable"}
+  ]
+}

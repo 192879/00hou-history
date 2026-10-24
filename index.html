@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#070b18">
+  <meta name="description" content="跨越三千年的中文人生抉择游戏：00后渡劫模拟器">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>00后渡劫模拟器</title>
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">00</span><div><strong>00后渡劫模拟器</strong><small>三千年 · 三十一届人生档案</small></div></div>
+    <button id="installBtn" class="ghost hidden">安装应用</button>
+  </header>
+  <main id="app" aria-live="polite"></main>
+  <footer>本作使用真实历史背景，人物、经历与个人故事均为虚构。</footer>
+  <input id="importInput" type="file" accept="application/json,.json" hidden>
+  <div id="toast" role="status"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
