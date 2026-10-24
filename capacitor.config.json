@@ -1,0 +1,23 @@
+{
+  "appId": "com.history00.life",
+  "appName": "00后渡劫模拟器",
+  "webDir": "dist",
+  "backgroundColor": "#050713",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#050713",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#050713",
+      "overlaysWebView": false
+    }
+  }
+}
